@@ -17,18 +17,16 @@
         <!-- BARRA -->
         <section class="header">
             <header>
-                <div class="card">
-                    <img class="avatar" src="./assets/1773756330562.jpg" alt="João Pedro"/>
-                    <div>
-                        <p class="nome">João Pedro dos Santos Menezes</p>
-                        <p class="cargo">Estudante de Graduação da CESAR School - Ciência da Computação</p>
-                    </div>
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-initials">JPSM</span>
+                    <span class="logo-bracket">&gt;</span>
                 </div>
                 <nav class="navbar">
-                    <a class="active" href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a class="active" href="./index.html">About</a>
+                    <a href="./index2.html">Projects</a>
+                    <a href="./index3.html">Books</a>
+                    <a href="./index4.html">Contact</a>
                 </nav>
                <button class="btn-tema" onclick="changeTheme()">
                     <img class="icon-sol" src="./assets/sol.svg" alt="Modo claro" width="16" height="16">
@@ -38,14 +36,48 @@
         </section>
 
         <!-- SOBRE -->
+        <section class="about">
+            <div class="about-inner">
+                <img class="about-photo" src="./assets/1773756330562.jpg" alt="João Pedro"/>
+                <div class="about-text">
+                    <h1 class="about-nome">João Pedro<br>dos Santos Menezes</h1>
+                    <p class="about-desc">
+                        Estudante de Ciência da Computação na CESAR School, Recife. 
+                        Apaixonado por low-level, embarcados, e 
+                        inteligência artificial. Sempre buscando construir coisas que importam.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <!-- EXPERIÊNCIA -->
-
-        <!-- PROJETOS -->
-
-        <!-- CONTATO -->
+        <section class="secao">
+            <h2 class="secao-titulo">Experiência</h2>
+            <ul class="lista">
+            <li class="item">
+                <div class="item-topo">
+                <p class="item-nome">CESAR School - <span class="item-nome-suave"> Teaching Assistant - NExT Preparatory Training </span> </p>
+                <p class="item-data">2026</p>
+                </div>
+                <p class="item-descricao">
+                    Atuação na monitoria acadêmica do treinamento preparatório, colaborando diretamente com o corpo docente na facilitação de dinâmicas práticas e no suporte aos alunos. Responsável por debater e otimizar as estratégias pedagógicas e metodologias de ensino das atividades em equipe, desenvolvendo habilidades de comunicação técnica, liderança e compartilhamento de conhecimento.
+                </p>
+            </li>
+            </ul>
+        </section>
 
         <!-- RODAPÉ -->
+        <section>
+            <footer class="rodape">
+                <span class="rodape-dominio">joaomenezes.vercel.app</span>
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-initials">JPSM</span>
+                    <span class="logo-bracket">&gt;</span>
+                </div>
+            </footer>
+        </section>
+        
     </main>
     <script src="script.js"></script>
 </body>
