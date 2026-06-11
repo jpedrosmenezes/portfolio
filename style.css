@@ -355,6 +355,12 @@ body.dark .icon-sol { display: none; }
 }
 
 /* CONTATO */
+.contato {
+    min-height: calc(100vh - 62px);
+    display: flex;
+    align-items: center;
+}
+
 .contato-inner {
     max-width: 600px;
     margin: 0 auto;
@@ -483,5 +489,55 @@ section:has(.rodape) {
 
     section:has(.rodape) {
         padding: 0 6% 2rem;
+    }
+
+    .header + .secao {
+        padding-top: 9rem;
+    }
+
+    .about {
+        margin-top: 110px;
+    }
+
+    .contato {
+        min-height: auto;
+    }
+
+    .contato-titulo {
+        font-size: 1.8rem;
+    }
+
+    .contato-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .contato-link-valor {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-photo {
+        width: 100%;
+        max-width: 280px;
+        height: 340px;
+    }
+
+    .about-nome {
+        font-size: 2rem;
+    }
+
+    .about-desc {
+        font-size: 1rem;
+    }
+
+    .secao-titulo {
+        font-size: 1.8rem;
+    }
+
+    .item {
+        padding: 1.25rem 1.5rem;
     }
 }
