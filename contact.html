@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Pedro S. Menezes Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+        rel="stylesheet"
+    />
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <main class="container">
+        <!-- BARRA -->
+        <section class="header">
+            <header>
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-initials">JPSM</span>
+                    <span class="logo-bracket">&gt;</span>
+                </div>
+                <nav class="navbar">
+                    <a href="./index.html">About</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./books.html">Books</a>
+                    <a class="active" href="./contact.html">Contact</a>
+                </nav>
+               <button class="btn-tema" onclick="changeTheme()">
+                    <img class="icon-sol" src="./assets/sol.svg" alt="Modo claro" width="16" height="16">
+                    <img class="icon-lua" src="./assets/lua.svg" alt="Modo escuro" width="16" height="16">
+                </button>
+            </header>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="secao contato">
+            <div class="contato-inner">
+                <h1 class="contato-titulo">Vamos conversar</h1>
+                <p class="contato-desc">
+                    Estou aberto a oportunidades, colaborações em projetos
+                    ou simplesmente trocar uma ideia. Manda uma mensagem!
+                </p>
+
+                <div class="contato-links">
+                    <a class="contato-link" href="mailto:joao.pedro.menezes@protonmail.com">
+                        <span class="contato-link-label">Email</span>
+                        <span class="contato-link-valor">joao.pedro.menezes@protonmail.com</span>
+                    </a>
+                    <a class="contato-link" href="https://github.com/jpedrosmenezes" target="_blank" rel="noopener">
+                        <span class="contato-link-label">GitHub</span>
+                        <span class="contato-link-valor">github.com/jpedrosmenezes</span>
+                    </a>
+                    <a class="contato-link" href="https://linkedin.com/in/joaopedrosmenezes" target="_blank" rel="noopener">
+                        <span class="contato-link-label">LinkedIn</span>
+                        <span class="contato-link-valor">linkedin.com/in/joaopedrosmenezes</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- RODAPÉ -->
+        <section>
+            <footer class="rodape">
+                <span class="rodape-dominio">joaomenezes.vercel.app</span>
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-initials">JPSM</span>
+                    <span class="logo-bracket">&gt;</span>
+                </div>
+            </footer>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
