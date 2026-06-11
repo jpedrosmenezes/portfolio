@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Pedro S. Menezes Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <main class="container">
+        <!-- BARRA -->
+        <section class="header">
+            <header>
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-initials">JPSM</span>
+                    <span class="logo-bracket">&gt;</span>
+                </div>
+                <nav class="navbar">
+                    <a href="./index.html">About</a>
+                    <a class="active" href="./projects.html">Projects</a>
+                    <a href="./books.html">Books</a>
+                    <a href="./contact.html">Contact</a>
+                </nav>
+               <button class="btn-tema" onclick="changeTheme()">
+                    <img class="icon-sol" src="./assets/sol.svg" alt="Modo claro" width="16" height="16">
+                    <img class="icon-lua" src="./assets/lua.svg" alt="Modo escuro" width="16" height="16">
+                </button>
+            </header>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="secao">
+            <h2 class="secao-titulo">Projetos</h2>
+            <div class="grid-projetos">
+
+                <article class="card-projeto">
+                    <div class="card-projeto-midia">
+                        <img src="./assets/projects/portfolio.png" alt="Seção 'About' do portfólio pessoal"/>
+                    </div>
+                    <div class="card-projeto-corpo">
+                        <h3 class="card-projeto-titulo">Portfólio Pessoal</h3>
+                        <p class="card-projeto-desc">
+                                Portfólio multipágina desenvolvido com HTML, CSS e JavaScript,
+                                apresentando projetos, leituras e informações de contato em uma interface responsiva
+                                com suporte a tema claro e escuro.
+                        </p>
+                        <div class="card-projeto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a class="card-projeto-link" href="https://github.com/jpedrosmenezes/portfolio" target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <div class="card-projeto-midia">
+                        <img src="./assets/projects/cpa4all.png" alt="Seção 'About' do portfólio pessoal"/>
+                    </div>
+                    <div class="card-projeto-corpo">
+                        <h3 class="card-projeto-titulo">CPA 4All</h3>
+                        <p class="card-projeto-desc">
+                            Desenvolvimento de um controle acessível para videogames utilizando
+                            Arduino, com foco em inclusão digital, acessibilidade e experiência do
+                            usuário para pessoas com distrofia muscular.
+                        </p>
+                        <div class="card-projeto-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Arduino</span>
+                        </div>
+                        <a class="card-projeto-link" href="https://sites.google.com/cesar.school/projeto1-261-g16/home" target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+                
+                <article class="card-projeto">
+                    <div class="card-projeto-midia">
+                        <img src="./assets/projects/fitplanner.png" alt="Página de login do projeto FitPlanner"/>
+                    </div>
+                    <div class="card-projeto-corpo">
+                        <h3 class="card-projeto-titulo">FitPlanner</h3>
+                        <p class="card-projeto-desc">
+                            API REST desenvolvida com FastAPI para gerenciamento de treinos, exercícios, metas
+                            e evolução física, com suporte a múltiplos usuários.
+                        </p>
+                        <div class="card-projeto-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                        </div>
+                        <a class="card-projeto-link" href="https://github.com/PauloRegisss/crud-fp" target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <div class="card-projeto-midia">
+                        <img src="./assets/projects/rustynes.png" alt="Imagem de um controle de NES"/>
+                    </div>
+                    <div class="card-projeto-corpo">
+                        <h3 class="card-projeto-titulo">RustyNES</h3>
+                        <p class="card-projeto-desc">
+                            Emulador do Nintendo Entertainment System (NES) desenvolvido em Rust,
+                            com foco no estudo de arquitetura de computadores, emulação e
+                            programação de baixo nível.
+                        </p>
+                        <div class="card-projeto-tags">
+                            <span class="tag">Rust</span>
+                        </div>
+                        <a class="card-projeto-link" href="https://github.com/jpedrosmenezes/RustyNES" target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <div class="card-projeto-midia">
+                        <img src="./assets/projects/olindear.gif" alt="Demonstração do projeto Olindear"/>
+                    </div>
+                    <div class="card-projeto-corpo">
+                        <h3 class="card-projeto-titulo">Olindear</h3>
+                        <p class="card-projeto-desc">
+                            Projeto de identidade visual e prototipação voltado para a valorização
+                            do patrimônio cultural de Olinda, desenvolvido utilizando Figma e
+                            Photoshop.
+                        </p>
+                        <div class="card-projeto-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                        <a class="card-projeto-link" href="https://www.figma.com/proto/iKzWpV5jmY4zgH4VjHwCQE/Marim-Figital---Prot%C3%B3tipo?node-id=4-2&t=xFNdTUGRXbt7TN8e-1" target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+                
+                <article class="card-projeto">
+                    <div class="card-projeto-midia">
+                        <img src="./assets/projects/c-wordle.png" alt="Breve descrição sobre o projeto C-Wordle"/>
+                    </div>
+                    <div class="card-projeto-corpo">
+                        <h3 class="card-projeto-titulo">C-Wordle</h3>
+                        <p class="card-projeto-desc">
+                            Clone do jogo Termo/Wordle executado no terminal, desenvolvido em C,
+                            reproduzindo a mecânica de adivinhação de palavras e o sistema de
+                            feedback por tentativas.
+                        </p>
+                        <div class="card-projeto-tags">
+                            <span class="tag">C</span>
+                        </div>
+                        <a class="card-projeto-link" href="https://github.com/jpedrosmenezes/C-Wordle" target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto">
+                    <div class="card-projeto-midia">
+                        <img src="./assets/projects/prouni-data.png" alt="Página do mapa de distribuição de bolsa em Pernambuco"/>
+                    </div>
+                    <div class="card-projeto-corpo">
+                        <h3 class="card-projeto-titulo">ProUni-Data</h3>
+                        <p class="card-projeto-desc">
+                            Projeto de análise e visualização de dados do ProUni utilizando Python,
+                            Pandas e Matplotlib para explorar tendências, estatísticas e padrões
+                            relacionados ao programa
+                        </p>
+                        <div class="card-projeto-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                        </div>
+                        <a class="card-projeto-link" href="https://github.com/jpedrosmenezes/ProUni-Data" target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        
+        <!-- RODAPÉ -->
+        <section>
+            <footer class="rodape">
+                <span class="rodape-dominio">joaomenezes.vercel.app</span>
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-initials">JPSM</span>
+                    <span class="logo-bracket">&gt;</span>
+                </div>
+            </footer>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
