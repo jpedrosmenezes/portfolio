@@ -18,7 +18,7 @@
     --cor-about-texto-suave: #9ca3af;
 }
 
-.dark {
+body.dark {
     --cor-fundo: #0f0f0f;
     --cor-fundo-header: rgba(15, 15, 15, 0.85);
     --cor-texto: #f0f0f0;
